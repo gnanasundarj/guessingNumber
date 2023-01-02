@@ -8,7 +8,7 @@ let highscore = document.querySelector(".highscore");
 let body = document.getElementsByTagName("body");
 
 let highscoreValue = 0;
-let initialSCore = 5;
+let initialSCore = 20;
 let randomNo = Math.trunc(Math.random() * 20 + 1);
 
 /////////////to check the answer//////
@@ -55,8 +55,8 @@ function reset(e) {
   //   console.log(body[0]);
   randomNo = Math.trunc(Math.random() * 20 + 1);
   message.innerText = "Start guessing...";
-  score.innerText = 5;
-  initialSCore = 5;
+  score.innerText = 20;
+  initialSCore = 20;
   inputValue.value = "";
   body[0].style.backgroundColor = "#222";
   check.removeAttribute("disabled");

@@ -28,7 +28,7 @@ function checkingAnswer(e) {
     return;
   }
   if (inputValue.value == randomNo) {
-    console.log("value", randomNo);
+    // console.log("value", randomNo);
     message.innerText = "🎉 Correct Number!";
     body[0].style.backgroundColor = "#60b347";
     gameStatus();
@@ -37,12 +37,12 @@ function checkingAnswer(e) {
       highscore.innerText = initialSCore;
     }
   } else if (inputValue.value < randomNo) {
-    console.log("value is less", randomNo);
+    // console.log("value is less", randomNo);
     message.innerText = "📉 Too low!";
     --initialSCore;
     score.innerText = initialSCore;
   } else {
-    console.log("value is more", randomNo);
+    // console.log("value is more", randomNo);
 
     message.innerText = "📈 Too high!";
     --initialSCore;
